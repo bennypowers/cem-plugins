@@ -1,13 +1,23 @@
 diff --git a/node_modules/@changesets/cli/dist/cli.cjs.dev.js b/node_modules/@changesets/cli/dist/cli.cjs.dev.js
-index f771824..c84954a 100644
+index f771824..1577813 100644
 --- a/node_modules/@changesets/cli/dist/cli.cjs.dev.js
 +++ b/node_modules/@changesets/cli/dist/cli.cjs.dev.js
-@@ -728,7 +728,7 @@ async function internalPublish(pkgName, opts, twoFactorState) {
+@@ -727,7 +727,8 @@ async function internalPublish(pkgName, opts, twoFactorState) {
+     npm_config_registry: getCorrectRegistry()
    };
    let {
-     stdout
--  } = await spawn__default['default'](publishTool.name, ["publish", opts.cwd, "--json", ...publishFlags], {
-+  } = await spawn__default['default']('npm', ["publish", opts.cwd, "--json", ...publishFlags], {
+-    stdout
++    stdout,
++    stderr,
+   } = await spawn__default['default'](publishTool.name, ["publish", opts.cwd, "--json", ...publishFlags], {
      env: Object.assign({}, process.env, envOverride)
    }); // New error handling. NPM's --json option is included alongside the `prepublish and
-   // `postpublish` contents in terminal. We want to handle this as best we can but it has
+@@ -735,7 +736,7 @@ async function internalPublish(pkgName, opts, twoFactorState) {
+   // some struggles
+   // Note that both pre and post publish hooks are printed before the json out, so this works.
+ 
+-  let json = jsonParse(stdout.toString().replace(/[^{]*/, ""));
++  let json = jsonParse(stdout.toString().replace(/[^{]*/, "") || stderr.toString().replace(/^npm ERR.*$/gm, '').replace(/[^{]*/, ""));
+ 
+   if (json.error) {
+     // The first case is no 2fa provided, the second is when the 2fa is wrong (timeout or wrong words)
