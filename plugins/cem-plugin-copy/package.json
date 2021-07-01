@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-copy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "copy manifest files",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
@@ -15,10 +15,14 @@
   },
   "type": "module",
   "main": "index.js",
-  "keywords": ["custom-elements-manifest", "plugin", "copy"],
+  "keywords": [
+    "custom-elements-manifest",
+    "plugin",
+    "copy"
+  ],
   "dependencies": {
     "chalk": "^4.1.1",
-    "globby":"11.0.4",
+    "globby": "11.0.4",
     "hirestime": "^6.1.0"
   }
 }

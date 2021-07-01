@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-async-function",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "async flag for functions and class methods",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
@@ -15,5 +15,9 @@
   },
   "type": "module",
   "main": "index.js",
-  "keywords": ["custom-elements-manifest", "plugin", "async"]
+  "keywords": [
+    "custom-elements-manifest",
+    "plugin",
+    "async"
+  ]
 }
