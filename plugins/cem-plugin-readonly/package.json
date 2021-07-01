@@ -1,0 +1,23 @@
+{
+  "name": "cem-plugin-readonly",
+  "version": "0.0.0",
+  "description": "Readonly fields",
+  "author": "Benny Powers <web@bennypowers.com>",
+  "contributors": [
+    "Hubert Sablonnière <hubert...sablonniere@gmail.com>"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
+    "directory": "plugins/cem-plugin-readonly"
+  },
+  "type": "module",
+  "main": "index.js",
+  "files": ["*.js", "preset"],
+  "keywords": ["custom-elements-manifest", "plugin"]
+}

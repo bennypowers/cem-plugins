@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my-element.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "TS",
+          "tagName": "t-s",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TS",
+          "declaration": {
+            "name": "TS",
+            "module": "my-element.js"
+          }
+        }
+      ]
+    }
+  ]
+}

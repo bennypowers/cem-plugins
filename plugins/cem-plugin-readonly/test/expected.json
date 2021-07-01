@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my-element.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ReadOnly",
+          "members": [
+            {
+              "kind": "field",
+              "name": "x",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "y",
+              "type": {
+                "text": "string"
+              },
+              "static": true,
+              "default": "'y'",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "z",
+              "type": {
+                "text": "string"
+              },
+              "static": true,
+              "default": "'z'"
+            },
+            {
+              "kind": "field",
+              "name": "x",
+              "type": {
+                "text": "string"
+              },
+              "default": "'x'",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "y",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "z",
+              "type": {
+                "text": "string"
+              },
+              "default": "'z'"
+            }
+          ],
+          "tagName": "read-only",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ReadOnly",
+          "declaration": {
+            "name": "ReadOnly",
+            "module": "my-element.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

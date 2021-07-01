@@ -1,0 +1,24 @@
+{
+  "name": "cem-plugin-type-descriptions-markdown",
+  "version": "0.0.0",
+  "description": "Append markdown descriptions to types",
+  "author": "Benny Powers <web@bennypowers.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
+    "directory": "plugins/cem-plugin-type-descriptions-markdown"
+  },
+  "type": "module",
+  "main": "index.js",
+  "files": ["*.js", "preset"],
+  "keywords": ["custom-elements-manifest", "plugin", "markdown"],
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "hirestime": "^6.1.0"
+  }
+}

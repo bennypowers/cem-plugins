@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my-element.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "XL",
+          "tagName": "x-l",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "XL",
+          "declaration": {
+            "name": "XL",
+            "module": "my-element.js"
+          }
+        }
+      ]
+    }
+  ]
+}

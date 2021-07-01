@@ -1,0 +1,19 @@
+{
+  "name": "cem-plugin-async-function",
+  "version": "0.0.0",
+  "description": "async flag for functions and class methods",
+  "author": "Benny Powers <web@bennypowers.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
+    "directory": "plugins/cem-plugin-async-function"
+  },
+  "type": "module",
+  "main": "index.js",
+  "keywords": ["custom-elements-manifest", "plugin", "async"]
+}

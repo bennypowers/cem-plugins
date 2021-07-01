@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my-element.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "## Examples\n\n### Do a thing\n```html\n<thing-doer></thing-doer>\n```",
+          "name": "ThingDoer",
+          "tagName": "thing-doer",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ThingDoer",
+          "declaration": {
+            "name": "ThingDoer",
+            "module": "my-element.js"
+          }
+        }
+      ]
+    }
+  ]
+}

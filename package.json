@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "private": true,
+  "description": "Custom Elements Manifest Analyzer Plugins",
+  "type": "module",
+  "repository": "git@github.com:bennypowers/cem-plugins.git",
+  "license": "MIT",
+  "workspaces": [
+    "plugins/*"
+  ],
+  "scripts": {
+    "test": "esm-tape-runner 'plugins/**/*.test.js' | tap-spec"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.16.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.3",
+    "@pwrs/eslint-config": "^0.0.21",
+    "@small-tech/esm-tape-runner": "^1.0.3",
+    "hirestime": "^6.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2",
+    "typescript": "^4.3.5",
+    "wsrun": "^5.2.4"
+  }
+}

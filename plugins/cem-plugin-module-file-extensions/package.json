@@ -1,0 +1,19 @@
+{
+  "name": "cem-plugin-module-file-extensions",
+  "version": "0.0.0",
+  "description": "Rewrite module path file extentions",
+  "author": "Benny Powers <web@bennypowers.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
+    "directory": "plugins/cem-plugin-module-file-extensions"
+  },
+  "type": "module",
+  "main": "index.js",
+  "keywords": ["custom-elements-manifest", "plugin", "extensions"]
+}

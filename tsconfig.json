@@ -1,0 +1,18 @@
+{
+  "include": ["../declaration"],
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
+    "target": "es2020",
+    "module": "es2020",
+    "esModuleInterop": true,
+    "useDefineForClassFields": false,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "lib": ["DOM","DOM.Iterable", "ES2019"],
+    "moduleResolution": "Node"
+  }
+}

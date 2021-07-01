@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "shoe-sizer.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ShoeSizer",
+          "members": [
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "BigBagOfProperties"
+              },
+              "description": "Sizes your shoes\n\n| Option     | Type   | Description |\n| ---------- | ------ | ----------- |\n| name       | string | The name of the thing |\n| shoeSize   | number | Act your age |\n",
+              "summary": "Shoe Size options"
+            }
+          ],
+          "tagName": "shoe-sizer",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ShoeSizer",
+          "declaration": {
+            "name": "ShoeSizer",
+            "module": "shoe-sizer.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
