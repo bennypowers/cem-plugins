@@ -1,0 +1,13 @@
+diff --git a/node_modules/@changesets/cli/dist/cli.cjs.dev.js b/node_modules/@changesets/cli/dist/cli.cjs.dev.js
+index f771824..c84954a 100644
+--- a/node_modules/@changesets/cli/dist/cli.cjs.dev.js
++++ b/node_modules/@changesets/cli/dist/cli.cjs.dev.js
+@@ -728,7 +728,7 @@ async function internalPublish(pkgName, opts, twoFactorState) {
+   };
+   let {
+     stdout
+-  } = await spawn__default['default'](publishTool.name, ["publish", opts.cwd, "--json", ...publishFlags], {
++  } = await spawn__default['default']('npm', ["publish", opts.cwd, "--json", ...publishFlags], {
+     env: Object.assign({}, process.env, envOverride)
+   }); // New error handling. NPM's --json option is included alongside the `prepublish and
+   // `postpublish` contents in terminal. We want to handle this as best we can but it has

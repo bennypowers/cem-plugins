@@ -9,6 +9,7 @@
     "plugins/*"
   ],
   "scripts": {
+    "postinstall": "patch-package",
     "release": "yarn changeset publish",
     "test": "esm-tape-runner 'plugins/**/*.test.js' | tap-spec"
   },
@@ -21,6 +22,7 @@
     "@small-tech/esm-tape-runner": "^1.0.3",
     "chalk": "^4.1.1",
     "hirestime": "^6.1.0",
+    "patch-package": "^6.4.7",
     "tap-spec": "^5.0.0",
     "tape": "^5.2.2",
     "typescript": "^4.3.5",
