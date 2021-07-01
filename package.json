@@ -9,6 +9,7 @@
     "plugins/*"
   ],
   "scripts": {
+    "release": "yarn changeset publish",
     "test": "esm-tape-runner 'plugins/**/*.test.js' | tap-spec"
   },
   "dependencies": {
