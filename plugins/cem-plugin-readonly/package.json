@@ -16,6 +16,9 @@
     "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
     "directory": "plugins/cem-plugin-readonly"
   },
+  "peerDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.3"
+  },
   "type": "module",
   "main": "index.js",
   "files": [

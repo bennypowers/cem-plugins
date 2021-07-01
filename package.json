@@ -19,6 +19,7 @@
     "@custom-elements-manifest/analyzer": "^0.4.3",
     "@pwrs/eslint-config": "^0.0.21",
     "@small-tech/esm-tape-runner": "^1.0.3",
+    "chalk": "^4.1.1",
     "hirestime": "^6.1.0",
     "tap-spec": "^5.0.0",
     "tape": "^5.2.2",
