@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-jsdoc-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Handle JSDoc @example tag",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
@@ -15,7 +15,11 @@
   },
   "type": "module",
   "main": "index.js",
-  "keywords": ["custom-elements-manifest", "plugin", "jsdoc"],
+  "keywords": [
+    "custom-elements-manifest",
+    "plugin",
+    "jsdoc"
+  ],
   "dependencies": {
     "chalk": "^4.1.1"
   }
