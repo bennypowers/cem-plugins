@@ -4,17 +4,10 @@
   "description": "copy manifest files",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
     "directory": "plugins/cem-plugin-copy"
-  },
-  "peerDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.3"
   },
   "type": "module",
   "main": "index.js",
@@ -27,5 +20,8 @@
     "chalk": "^4.1.1",
     "globby": "11.0.4",
     "hirestime": "^6.1.0"
+  },
+  "peerDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.3"
   }
 }

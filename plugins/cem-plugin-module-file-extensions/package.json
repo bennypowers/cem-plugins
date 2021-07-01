@@ -4,10 +4,6 @@
   "description": "Rewrite module path file extentions",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",

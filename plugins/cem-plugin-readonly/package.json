@@ -7,10 +7,6 @@
     "Hubert Sablonnière <hubert...sablonniere@gmail.com>"
   ],
   "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
