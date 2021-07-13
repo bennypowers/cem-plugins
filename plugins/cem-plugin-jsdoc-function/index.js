@@ -1,7 +1,7 @@
 /**
  * @return {import('@custom-elements-manifest/analyzer').Plugin}
  */
-export function asyncFunctionPlugin() {
+export function jsdocFunctionPlugin() {
   return {
     name: 'jsdoc-function',
     analyzePhase({ ts, node, moduleDoc }) {
