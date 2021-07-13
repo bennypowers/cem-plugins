@@ -33,7 +33,7 @@ export async function b() {}
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "my-element.js",
+      "path": "async-function.js",
       "declarations": [
         {
           "kind": "class",
@@ -61,7 +61,7 @@ export async function b() {}
           "name": "Async",
           "declaration": {
             "name": "Async",
-            "module": "my-element.js"
+            "module": "async-function.js"
           }
         },
         {
@@ -69,7 +69,7 @@ export async function b() {}
           "name": "b",
           "declaration": {
             "name": "b",
-            "module": "my-element.js"
+            "module": "async-function.js"
           }
         }
       ]

@@ -1,0 +1,22 @@
+{
+  "name": "cem-plugin-jsdoc-function",
+  "version": "0.0.0",
+  "description": "@function JSDoc tag for variables",
+  "author": "Benny Powers <web@bennypowers.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/cem-plugins.git",
+    "directory": "plugins/cem-plugin-jsdoc-function"
+  },
+  "type": "module",
+  "main": "index.js",
+  "peerDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.3"
+  },
+  "keywords": [
+    "custom-elements-manifest",
+    "plugin",
+    "async"
+  ]
+}

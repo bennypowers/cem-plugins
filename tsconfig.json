@@ -1,5 +1,4 @@
 {
-  "include": ["../declaration"],
   "compilerOptions": {
     "checkJs": true,
     "allowJs": true,

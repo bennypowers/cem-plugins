@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '15'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: 15
+          registry-url: https://registry.npmjs.org
 
       - name: Install packages
         run: sudo yarn --frozen-lockfile
