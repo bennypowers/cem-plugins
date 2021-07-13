@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-async-function",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "async flag for functions and class methods",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
