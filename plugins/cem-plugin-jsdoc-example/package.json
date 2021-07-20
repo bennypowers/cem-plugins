@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-jsdoc-example",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Handle JSDoc @example tag",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
