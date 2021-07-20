@@ -8,10 +8,27 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "## Examples\n\n### Do a thing\n```html\n<thing-doer></thing-doer>\n```",
+          "description": "## Examples\n\n### <caption>Do a thing</caption>\n```html\n<thing-doer></thing-doer>\n```",
           "name": "ThingDoer",
+          "members": [
+            {
+              "kind": "field",
+              "name": "prop",
+              "description": "## Examples\n\n### <caption>A Property</caption>\n```js\nel.prop = 'prop';\n```"
+            },
+            {
+              "kind": "method",
+              "name": "method",
+              "description": "## Examples\n\n### <caption>A Method</caption>\n```js\nel.method();\n```"
+            }
+          ],
           "tagName": "thing-doer",
           "customElement": true
+        },
+        {
+          "kind": "function",
+          "name": "f",
+          "description": "## Examples\n\n### <caption>Call a Function</caption>\n```js\nf();\n```"
         }
       ],
       "exports": [
@@ -20,6 +37,14 @@
           "name": "ThingDoer",
           "declaration": {
             "name": "ThingDoer",
+            "module": "my-element.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "f",
+          "declaration": {
+            "name": "f",
             "module": "my-element.js"
           }
         }
