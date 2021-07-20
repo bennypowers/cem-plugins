@@ -40,7 +40,7 @@ function getDeclarationDoc(moduleDoc, name) {
  * @param {number} [offset=0]
  */
 function addExamples(node, doc, context, offset = 0) {
-  const heading = Array.from({ length: (2 + offset) }, () => '#').join();
+  const heading = Array.from({ length: (2 + offset) }, () => '#').join('');
   let sawExamples = false;
 
   // eslint-disable-next-line easy-loops/easy-loops

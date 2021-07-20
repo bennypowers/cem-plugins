@@ -14,12 +14,12 @@
             {
               "kind": "field",
               "name": "prop",
-              "description": "## Examples\n\n### <caption>A Property</caption>\n```js\nel.prop = 'prop';\n```"
+              "description": "### Examples\n\n#### <caption>A Property</caption>\n```js\nel.prop = 'prop';\n```"
             },
             {
               "kind": "method",
               "name": "method",
-              "description": "## Examples\n\n### <caption>A Method</caption>\n```js\nel.method();\n```"
+              "description": "### Examples\n\n#### <caption>A Method</caption>\n```js\nel.method();\n```"
             }
           ],
           "tagName": "thing-doer",
