@@ -1,7 +1,7 @@
 import ts from 'typescript';
 import test from 'tape';
 
-import { asyncFunctionPlugin } from '../index.js';
+import { jsdocFunctionPlugin } from '../index.js';
 import { create } from '@custom-elements-manifest/analyzer/src/create.js';
 import { readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
@@ -10,14 +10,14 @@ import { fileURLToPath } from 'url';
 const getRelative = path => resolve(fileURLToPath(new URL(path, import.meta.url)));
 const read = path => readFileSync(getRelative(path), 'utf8');
 
-test('asyncFunctionPlugin', function(t) {
+test('jsdocFunctionPlugin', function(t) {
   const path = './my-element.js';
   const source = read(path);
   const expected = JSON.parse(read('./expected.json'));
 
   const customElementsManifest = create({
     modules: [ts.createSourceFile(path, source, ts.ScriptTarget.ES2015, true)],
-    plugins: [asyncFunctionPlugin()],
+    plugins: [jsdocFunctionPlugin()],
   });
 
   writeFileSync(getRelative('./output.json'), JSON.stringify(customElementsManifest, null, 2));
