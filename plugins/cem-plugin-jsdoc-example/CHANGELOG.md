@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.4
+
+### Patch Changes
+
+- ac255e5: fixed bug that misrendered markdown headings
+
 ## 0.0.3
 
 ### Patch Changes
