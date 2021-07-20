@@ -5,7 +5,11 @@ import { getClassMemberDoc } from '@custom-elements-manifest/analyzer/src/utils/
  * @return {Boolean}
  */
 function isJsDocExampleTag(tag) {
-  return tag.tagName.getText() === 'example';
+  try {
+    return tag.tagName.getText() === 'example';
+  } catch {
+    return false;
+  }
 }
 
 /**
@@ -83,7 +87,7 @@ export function jsdocExamplePlugin() {
         addExamples(node, classDoc, context);
       } else if (ts.isPropertyDeclaration(node)) {
         const propertyName = node.name.getText();
-        const className = node.parent.name.getText();
+        const className = node.parent?.name?.getText?.();
         const classDoc = getDeclarationDoc(moduleDoc, className);
         if (!classDoc)
           return;
