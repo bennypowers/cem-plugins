@@ -33,6 +33,25 @@ function getDeclarationDoc(moduleDoc, name) {
 }
 
 /**
+ * `^<caption>`     - for the string starting with `<caption>`
+ * `(?<caption>.*)` - capture anything as group named "caption"
+ * `<\/caption>`    - until reaching the substring "</caption>"
+ * `(?<rest>.*)`    - then capture the rest as group named "rest"
+ * `/ms`            - multiline, and let `.` capture across linebreaks (for "rest")
+ */
+const CAPTION_RE =
+  /^<caption>(?<caption>.*)<\/caption>(?<rest>.*)/ms;
+
+/**
+ * `^(?<caption>[\w \t]+)` - from the start of the string, capture any combination of alphanumeric, underscore, space, or tab as "caption"
+ * `\n`                    - until reaching the first linebreak
+ * `(?<rest>.*)`           - then capture all the rest as "rest"
+ * `/ms`            - multiline, and let `.` capture across linebreaks (for "rest")
+ */
+const NEWLINE_RE =
+  /^(?<caption>[\w \t]+)\n(?<rest>.*)/ms;
+
+/**
  * Add a Node's JSDoc examples to a manifest object
  * @param {import('typescript').Node & { jsDoc: import('typescript').JSDoc[] }} node
  * @param {import("custom-elements-manifest/schema").Declaration} doc
@@ -60,10 +79,14 @@ function addExamples(node, doc, context, offset = 0) {
     // eslint-disable-next-line easy-loops/easy-loops
     for (const tag of tags) {
       if (typeof tag.comment === 'string') {
-        const [caption, ...rest] = tag.comment.split('\n');
+        const RE = tag.comment.startsWith('<caption>') ? CAPTION_RE : NEWLINE_RE;
+        const match = tag.comment.match(RE);
+        if (!match)
+          continue;
+        const { caption, rest } = match.groups;
         if (context.dev)
           console.log(`[jsdoc-example] found @example ${caption}`);
-        doc.description += `${heading}# ${caption}\n${rest.join('\n')}\n\n`;
+        doc.description += `<figure class="example"><figcaption>${caption}</figcaption>\n\n${rest.trimStart()}\n\n</figure>\n\n`;
       }
     }
     doc.description = doc.description.trim();

@@ -4,6 +4,10 @@
  * ```html
  *         <thing-doer></thing-doer>
  * ```
+ * @example Poorly formed
+ * ```html
+ *         <p>but we still allow it</p>
+ * ```
  */
 export class ThingDoer {
   /**

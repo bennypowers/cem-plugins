@@ -8,18 +8,18 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "## Examples\n\n### <caption>Do a thing</caption>\n```html\n<thing-doer></thing-doer>\n```",
+          "description": "## Examples\n\n<figure class=\"example\"><figcaption>Do a thing</figcaption>\n\n```html\n<thing-doer></thing-doer>\n```\n\n</figure>\n\n<figure class=\"example\"><figcaption>Poorly formed</figcaption>\n\n```html\n<p>but we still allow it</p>\n```\n\n</figure>",
           "name": "ThingDoer",
           "members": [
             {
               "kind": "field",
               "name": "prop",
-              "description": "### Examples\n\n#### <caption>A Property</caption>\n```js\nel.prop = 'prop';\n```"
+              "description": "### Examples\n\n<figure class=\"example\"><figcaption>A Property</figcaption>\n\n```js\nel.prop = 'prop';\n```\n\n</figure>"
             },
             {
               "kind": "method",
               "name": "method",
-              "description": "### Examples\n\n#### <caption>A Method</caption>\n```js\nel.method();\n```"
+              "description": "### Examples\n\n<figure class=\"example\"><figcaption>A Method</figcaption>\n\n```js\nel.method();\n```\n\n</figure>"
             }
           ],
           "tagName": "thing-doer",
@@ -28,7 +28,7 @@
         {
           "kind": "function",
           "name": "f",
-          "description": "## Examples\n\n### <caption>Call a Function</caption>\n```js\nf();\n```"
+          "description": "## Examples\n\n<figure class=\"example\"><figcaption>Call a Function</figcaption>\n\n```js\nf();\n```\n\n</figure>"
         }
       ],
       "exports": [
