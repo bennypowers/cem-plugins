@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.5
+
+### Patch Changes
+
+- 05c2ca6: Improve markup for example plugin
+
 ## 0.0.4
 
 ### Patch Changes
