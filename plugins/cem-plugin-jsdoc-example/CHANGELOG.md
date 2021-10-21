@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.6
+
+### Patch Changes
+
+- 5056ad3: Bump cem/a dependency
+
 ## 0.0.5
 
 ### Patch Changes

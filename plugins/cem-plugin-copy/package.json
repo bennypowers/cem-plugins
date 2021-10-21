@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-copy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "copy manifest files",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
