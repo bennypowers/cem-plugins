@@ -10,7 +10,7 @@
     "directory": "plugins/cem-plugin-type-descriptions-markdown"
   },
   "peerDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.3"
+    "@custom-elements-manifest/analyzer": "^0.4.3 || ^0.5.6"
   },
   "type": "module",
   "main": "index.js",
@@ -24,7 +24,7 @@
     "markdown"
   ],
   "dependencies": {
-    "chalk": "^4.1.1",
+    "chalk": "^4.1.2",
     "hirestime": "^6.1.0"
   }
 }

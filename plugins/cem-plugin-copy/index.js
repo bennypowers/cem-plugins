@@ -5,6 +5,12 @@ import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
+/**
+ * Reads a JSON file at a path as an object
+ * @template {*} T
+ * @param  {string} path
+ * @return {T}
+ */
 function readJSONSync(path) {
   const url = new URL(path, import.meta.url);
   const content = readFileSync(url.toString().replace('file://', ''), 'utf-8');
@@ -14,7 +20,8 @@ function readJSONSync(path) {
 /**
  * @typedef {object} Options
  * @property {string} configUrl path to custom-elements-manifest.config.js
- * @property {string} to relative path to from config to output dir
+ * @property {string} from absolute path from config to output dir
+ * @property {string} to relative path from config to output dir
  * @property {boolean} quiet suppress logs
  */
 

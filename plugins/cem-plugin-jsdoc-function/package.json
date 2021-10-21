@@ -12,7 +12,7 @@
   "type": "module",
   "main": "index.js",
   "peerDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.3"
+    "@custom-elements-manifest/analyzer": "^0.4.3 || ^0.5.6"
   },
   "keywords": [
     "custom-elements-manifest",

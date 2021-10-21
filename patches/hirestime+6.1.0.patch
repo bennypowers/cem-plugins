@@ -1,0 +1,14 @@
+diff --git a/node_modules/hirestime/dist/index.d.ts b/node_modules/hirestime/dist/index.d.ts
+index 5e370cc..493faa7 100755
+--- a/node_modules/hirestime/dist/index.d.ts
++++ b/node_modules/hirestime/dist/index.d.ts
+@@ -13,5 +13,8 @@ export interface Elapsor {
+ export declare const hirestimeNode: () => Elapsor;
+ export declare const hiresTimeBrowserPerformance: () => Elapsor;
+ export declare const hiresTimeBrowserDate: () => Elapsor;
+-declare const hirestime: () => Elapsor;
++declare const hirestime: {
++  (): Elapsor;
++  default: () => Elapsor;
++}
+ export default hirestime;

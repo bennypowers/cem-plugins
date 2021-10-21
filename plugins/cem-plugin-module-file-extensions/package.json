@@ -10,7 +10,7 @@
     "directory": "plugins/cem-plugin-module-file-extensions"
   },
   "peerDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.3"
+    "@custom-elements-manifest/analyzer": "^0.4.3 || ^0.5.6"
   },
   "type": "module",
   "main": "index.js",

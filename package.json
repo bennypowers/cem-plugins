@@ -14,18 +14,18 @@
     "test": "esm-tape-runner 'plugins/**/*.test.js' | tap-spec"
   },
   "dependencies": {
-    "@changesets/cli": "^2.16.0"
+    "@changesets/cli": "^2.17.0"
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.3",
-    "@pwrs/eslint-config": "^0.0.21",
+    "@custom-elements-manifest/analyzer": "^0.4.3 || ^0.5.6",
+    "@pwrs/eslint-config": "^0.0.25",
     "@small-tech/esm-tape-runner": "^1.0.3",
-    "chalk": "^4.1.1",
+    "chalk": "^4.1.2",
     "hirestime": "^6.1.0",
     "patch-package": "^6.4.7",
     "tap-spec": "^5.0.0",
-    "tape": "^5.2.2",
-    "typescript": "^4.3.5",
+    "tape": "^5.3.1",
+    "typescript": "^4.4.4",
     "wsrun": "^5.2.4"
   }
 }
