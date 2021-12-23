@@ -10,7 +10,7 @@ import { isStaticMember } from '@custom-elements-manifest/analyzer/src/utils/ast
 function isReadonly(node, ts) {
   return (
     node.modifiers?.some?.(x => x.kind === ts.SyntaxKind.ReadonlyKeyword) ||
-    node.jsDoc?.tags?.some?.(tag => tag.kind === ts.SyntaxKind.JSDocReadonlyTag)
+    node.jsDoc?.flatMap(i => i.tags).some(tag => tag?.kind === ts.SyntaxKind.JSDocReadonlyTag)
   );
 }
 
