@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.8
+
+### Patch Changes
+
+- e1323ff: update peer dep for cem/a
+
 ## 0.0.7
 
 ### Patch Changes

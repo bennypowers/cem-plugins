@@ -1,5 +1,11 @@
 # cem-plugin-async-function
 
+## 0.0.4
+
+### Patch Changes
+
+- e1323ff: update peer dep for cem/a
+
 ## 0.0.3
 
 ### Patch Changes

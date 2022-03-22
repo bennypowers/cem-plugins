@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-type-descriptions-markdown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Append markdown descriptions to types",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
