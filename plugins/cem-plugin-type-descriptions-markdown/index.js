@@ -83,9 +83,9 @@ function replaceDescriptionUsingTables(moduleDoc, member, context) {
 
     if (member.description !== orig) {
       if (context.dev && !context.quiet)
-        console.log(chalk.blue`Replaced description for ${chalk.bold(foundMemberTypeName)} in ${moduleDoc.path}`);
+        console.log(chalk.blue(`Replaced description for ${chalk.bold(foundMemberTypeName)} in ${moduleDoc.path}`));
     } else if (!context.quiet)
-      console.log(chalk.red`FAILED to replace description for ${chalk.bold(foundMemberTypeName)} in ${moduleDoc.path}`);
+      console.log(chalk.red(`FAILED to replace description for ${chalk.bold(foundMemberTypeName)} in ${moduleDoc.path}`));
   }
 }
 
@@ -161,7 +161,7 @@ export function typeDescriptionsMarkdownPlugin({ typeTablesDir, quiet }) {
           declaration.members?.forEach?.(process);
       });
       if (!quiet)
-        console.log(chalk.green`Replaced descriptions in ${chalk.bold(moduleDoc.path)} in ${time.seconds()}s`);
+        console.log(chalk.green(`Replaced descriptions in ${chalk.bold(moduleDoc.path)} in ${time.seconds()}s`));
     },
   };
 }

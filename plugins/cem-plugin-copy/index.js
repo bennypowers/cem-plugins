@@ -33,6 +33,7 @@ export function copyPlugin({ from, to, quiet }) {
   return {
     name: 'copy',
     packageLinkPhase({ customElementsManifest }) {
+      // @ts-expect-error: https://github.com/seriousManual/hirestime/pull/39
       const time = hirestime.default();
 
       const pkgDirPath = dirname(fileURLToPath(new URL(from)));
@@ -52,7 +53,7 @@ export function copyPlugin({ from, to, quiet }) {
       );
 
       if (!quiet)
-        console.log(chalk.green`Copied manifest and package for ${chalk.bold(name)} in ${time.seconds()}s`);
+        console.log(chalk.green(`Copied manifest and package for ${chalk.bold(name)} in ${time.seconds()}s`));
     },
   };
 }

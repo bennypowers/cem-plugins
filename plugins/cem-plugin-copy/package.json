@@ -17,7 +17,7 @@
     "copy"
   ],
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "hirestime": "^6.1.0"
   },
   "peerDependencies": {
