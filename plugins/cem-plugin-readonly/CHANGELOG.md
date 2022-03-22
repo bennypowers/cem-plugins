@@ -1,5 +1,12 @@
 # cem-plugin-readonly
 
+## 0.0.3
+
+### Patch Changes
+
+- be43c96: Add types and fix readonly ts as query
+- 021699c: update dependencies
+
 ## 0.0.2
 
 ### Patch Changes

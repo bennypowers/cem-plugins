@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.7
+
+### Patch Changes
+
+- 021699c: update dependencies
+
 ## 0.0.6
 
 ### Patch Changes

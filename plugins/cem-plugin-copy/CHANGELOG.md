@@ -1,5 +1,11 @@
 # cem-plugin-copy
 
+## 0.0.3
+
+### Patch Changes
+
+- 021699c: update dependencies
+
 ## 0.0.2
 
 ### Patch Changes
