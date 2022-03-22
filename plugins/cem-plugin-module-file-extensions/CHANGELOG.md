@@ -1,5 +1,12 @@
 # cem-plugin-module-file-extensions
 
+## 0.0.3
+
+### Patch Changes
+
+- e2ed9ef: Add types
+- 021699c: update dependencies
+
 ## 0.0.2
 
 ### Patch Changes
