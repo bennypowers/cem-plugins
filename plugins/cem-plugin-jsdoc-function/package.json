@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-jsdoc-function",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@function JSDoc tag for variables",
   "author": "Benny Powers <web@bennypowers.com>",
   "license": "MIT",
