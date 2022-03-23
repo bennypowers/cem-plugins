@@ -11,6 +11,10 @@
   },
   "type": "module",
   "main": "index.js",
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
   "peerDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4 || ^0.5"
   },

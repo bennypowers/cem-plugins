@@ -12,6 +12,10 @@
   "peerDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4 || ^0.5"
   },
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
   "type": "module",
   "main": "index.js",
   "keywords": [

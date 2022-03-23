@@ -14,6 +14,10 @@
   },
   "type": "module",
   "main": "index.js",
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
   "keywords": [
     "custom-elements-manifest",
     "plugin",
