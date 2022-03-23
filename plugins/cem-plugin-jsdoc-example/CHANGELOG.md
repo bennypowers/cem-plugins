@@ -1,5 +1,11 @@
 # cem-plugin-jsdoc-example
 
+## 0.0.9
+
+### Patch Changes
+
+- 63c96e9: Add TS declarations and package.json files block
+
 ## 0.0.8
 
 ### Patch Changes
