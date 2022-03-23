@@ -1,6 +1,6 @@
 {
   "name": "cem-plugin-readonly",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Readonly fields",
   "author": "Benny Powers <web@bennypowers.com>",
   "contributors": [
