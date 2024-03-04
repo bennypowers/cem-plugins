@@ -1,6 +1,6 @@
-# cem-plugin-readonly
+# cem-plugin-module-file-extensions
 
-Adds (non-standard) "readonly" flag to class fields
+Rewrite module path file extentions
 
 ## Options
 
