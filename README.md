@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Repo archived - use [cem](https://github.com/bennypowers/cem) instead.
+
 # cem-plugins
 
 [Custom Elements Manifest Analyzer](https://github.com/open-wc/custom-elements-manifest/) Plugins
